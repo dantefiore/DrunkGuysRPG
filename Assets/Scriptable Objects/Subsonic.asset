@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0768b974bdd1f5f419ff286e5c4ca48b, type: 3}
+  m_Name: Subsonic
+  m_EditorClassIdentifier: 
+  charName: Subsonic
+  speed: 10
+  strength: 2
+  characterGameObject: {fileID: 123040516411543458, guid: 4cc87ff34d4cc3e4e9739849a5059b66, type: 3}
+  maxHealth: 10
+  currHealth: 10
+  maxAbilityPts: 10
+  currAbilityPts: 10
+  level: 1
+  exp: 0
+  position:
+  - 2.196034
+  - 0.04
+  - 0
+  isPlayer: 1
+  isTurnSkipped: 0
+  charMoves:
+  - {fileID: 11400000, guid: 88ab3198754aaf54ab703e590adc9ed2, type: 2}
+  - {fileID: 11400000, guid: 5c15ffcff2f5b7a4fa472c4f785bd546, type: 2}
+  - {fileID: 11400000, guid: b035cf462204f2b40a06886efd1f5724, type: 2}
+  lvlOneAbilityPts: 10
+  lvlOneHealth: 10
+  lvlOneSpeed: 10
+  lvlOneStrength: 2
