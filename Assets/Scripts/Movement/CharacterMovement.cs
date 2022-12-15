@@ -5,30 +5,52 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float speed;   // how fast the player moves
     private Vector3 moveDirection = Vector3.zero;   //move direction
     private CharacterController controller; // character controller
+    bool groundedPlayer;
+    Vector3 playerVelocity;
+    Rigidbody rb;
+    SpriteRenderer sprite;
+    float gravityValue = -9.81f;
 
     void Start()
     {
         // Conects the character controller
         controller = GetComponent<CharacterController>();
+
+        rb = this.gameObject.GetComponent<Rigidbody>();
+        sprite = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // when the move keys (WASD or Arrows) are pressed the character moves at a certain speed
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
 
-        // depending if that player is moving left or right, the sprite will face that direction
-        if (Input.GetAxis("Horizontal") < 0)
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            playerVelocity.y = 0f;
         }
-        else
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        
-        // stabilizes it so that every machine goes at the same speed
-        controller.Move(moveDirection * Time.deltaTime);    
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
+
+        controller.Move(moveDirection * Time.deltaTime);
+
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            sprite.flipX = false;
+        }
+        else if(Input.GetAxis("Horizontal") < 0)
+        {
+            sprite.flipX = true;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Vector2 newPos = new Vector2(moveDirection.x + rb.position.x, moveDirection.z + rb.position.z);
+        rb.MovePosition(newPos * speed * Time.fixedDeltaTime);
     }
 }

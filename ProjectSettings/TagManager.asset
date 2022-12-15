@@ -9,6 +9,9 @@ TagManager:
   - PartyMember3
   - Enemy
   - ButtonsToDestroy
+  - SpawnPoint
+  - Rooms
+  - ClosedRoom
   layers:
   - Default
   - TransparentFX

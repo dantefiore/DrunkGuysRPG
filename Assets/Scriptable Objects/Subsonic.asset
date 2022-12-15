@@ -17,13 +17,13 @@ MonoBehaviour:
   strength: 2
   characterGameObject: {fileID: 123040516411543458, guid: 4cc87ff34d4cc3e4e9739849a5059b66, type: 3}
   maxHealth: 10
-  currHealth: 10
+  currHealth: 0
   maxAbilityPts: 10
   currAbilityPts: 10
   level: 1
   exp: 0
   position:
-  - 2.196034
+  - -2.13
   - 0.04
   - 0
   isPlayer: 1

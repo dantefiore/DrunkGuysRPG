@@ -8,6 +8,8 @@ public enum Battle { START, PLAYERTURN, ENEMYTURN, WIN, LOST }
 
 public class CombatManager : MonoBehaviour
 {
+    [SerializeField] MapSaverSO map;
+
     /* THE GAME OBJECT OF THE PLAYER PARTY,
      * USED TO SPAWN THEM IN THE RIGHT LOCATION */
     [Header("Players")]
@@ -345,6 +347,8 @@ public class CombatManager : MonoBehaviour
     {
         if (battleState == Battle.WIN)
         {
+            map.fromBattle = true;
+
             // changes the text to the tell the player they won and stays for 2 seconds
             yield return new WaitForSeconds(0.5f);
             Debug.Log("Player wins");
@@ -376,6 +380,7 @@ public class CombatManager : MonoBehaviour
 
             /* Loads the SampleScene
              * -- LATER CHANGE IT TO THE SCENE THE PLAYER WAS IN PREVIOUSLY AND WHERE THEY WERE -- */
+            
             LevelLoader.instance.LoadLevel("SampleScene");
         }
         else if (battleState == Battle.LOST)

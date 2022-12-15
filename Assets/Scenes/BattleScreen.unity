@@ -1948,6 +1948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b8908acb84e7f4b909dced419b3906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: c7582c73fa75dee4ab467ef7a041de3d, type: 2}
   playerLocs:
   - {fileID: 234560504}
   - {fileID: 1308504034}
@@ -7587,6 +7588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b8908acb84e7f4b909dced419b3906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  map: {fileID: 0}
   playerLocs: []
   enemyLocs: []
   playerParty: {fileID: 0}
