@@ -11,6 +11,8 @@ public class CharacterMovement : MonoBehaviour
     SpriteRenderer sprite;
     float gravityValue = -9.81f;
 
+    //[SerializeField] MapSaverSO saver;
+
     void Start()
     {
         // Conects the character controller

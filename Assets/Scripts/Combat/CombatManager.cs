@@ -385,6 +385,7 @@ public class CombatManager : MonoBehaviour
         }
         else if (battleState == Battle.LOST)
         {
+            map.fromBattle = false;
             gameText.text = "You Lose.";
 
             yield return new WaitForSeconds(0.5f);

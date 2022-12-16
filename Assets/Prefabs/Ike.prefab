@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 123040516411543459}
   - component: {fileID: -2501391967032278905}
   m_Layer: 0
-  m_Name: Subsonic
+  m_Name: Ike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a8ec9aae69811d48b178e15aa806a91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e16c52bbd9e0eb5419d1633f0f0d71d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

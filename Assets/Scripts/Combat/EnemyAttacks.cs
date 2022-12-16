@@ -42,6 +42,6 @@ public class EnemyAttacks : MonoBehaviour
     private void Heal(StatusHUD enemyHUD, CharacterStatus thisEnemy, TextMeshProUGUI gameText)
     {
         gameText.text = thisEnemy.charName + " healed for " + thisEnemy.strength + "!";
-        enemyHUD.SetHP(thisEnemy, thisEnemy.strength * -1, true);
+        enemyHUD.SetHP(thisEnemy, thisEnemy.strength, true);
     }
 }

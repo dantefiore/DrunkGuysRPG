@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8752182255833403941}
   - component: {fileID: 2901466402565828021}
   - component: {fileID: 4764972284713293737}
+  - component: {fileID: 1561513783}
   m_Layer: 0
   m_Name: Temp Enemy
   m_TagString: Enemy
@@ -127,6 +128,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7c5e192be7d004994d520ba72af4df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1561513783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721797219970680067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ecfb23e506796a4e85643c0cda6abe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
+  - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
+  - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
+  saver: {fileID: 11400000, guid: c7582c73fa75dee4ab467ef7a041de3d, type: 2}
+  index: 0
+  SceneToLoad: BattleScreen
+  enemyParty: {fileID: 11400000, guid: 6fa2f39873863a84c8c36fb9f0da6fb2, type: 2}
 --- !u!1 &4275356998254139139
 GameObject:
   m_ObjectHideFlags: 0

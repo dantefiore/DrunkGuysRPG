@@ -20,7 +20,7 @@ public class StatusManager : MonoBehaviour
      * THE ENEMY PARTY IS CHANGED, AND THE BATTLE SCENE IS LOADED */
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             enemyParty.partyMembers.Clear();
 
@@ -38,10 +38,18 @@ public class StatusManager : MonoBehaviour
                 if (!isAttacked)
                 {
                     isAttacked = true;
-                    setBattleData(other);   //sets the player transform;
+                    setBattleData(other);   //sets the player 
+
+                    Destroy(this.gameObject);
                     LevelLoader.instance.LoadLevel(SceneToLoad); //loads the battle
                 }
             }
+            else
+                Debug.Log("Party Leader Health is 0");
+        }
+        else if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
         }
     }
 
@@ -51,6 +59,7 @@ public class StatusManager : MonoBehaviour
         // Player Data 
         playerStatus.position[0] = this.transform.position.x;
         playerStatus.position[1] = this.transform.position.y;
+        playerStatus.position[2] = this.transform.position.z;
     }
 
     /*
