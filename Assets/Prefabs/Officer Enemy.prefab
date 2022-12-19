@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 2901466402565828021}
   - component: {fileID: 4764972284713293737}
   - component: {fileID: 1561513783}
+  - component: {fileID: -6016790815168578786}
   m_Layer: 0
-  m_Name: Temp Enemy
+  m_Name: Officer Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5cc6ff5ac84a0814ba70bda39e9946f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f6575e629cf7344386e38529d8d4e13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charStatus: {fileID: 11400000, guid: 6cd9996787d6ce941bc6044016ac6871, type: 2}
+  saver: {fileID: 0}
 --- !u!136 &2901466402565828021
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -144,10 +146,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
   - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
   - {fileID: 11400000, guid: 14fa302c633758842bef5309c69a95f1, type: 2}
-  saver: {fileID: 11400000, guid: c7582c73fa75dee4ab467ef7a041de3d, type: 2}
-  index: 0
   SceneToLoad: BattleScreen
   enemyParty: {fileID: 11400000, guid: 6fa2f39873863a84c8c36fb9f0da6fb2, type: 2}
+--- !u!114 &-6016790815168578786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721797219970680067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e327200369cd64386f28a9b1c3d262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 0f6575e629cf7344386e38529d8d4e13, type: 3}
+  - {fileID: 21300000, guid: 5060100b601b769498a9c1ea80f62bb4, type: 3}
+  - {fileID: 21300000, guid: c630f2d602edaf64d8ebd1aa5286e757, type: 3}
+  - {fileID: 21300000, guid: cae899cdbb6d90e408445f07d6ce9beb, type: 3}
+  - {fileID: 21300000, guid: 5cc6ff5ac84a0814ba70bda39e9946f7, type: 3}
 --- !u!1 &4275356998254139139
 GameObject:
   m_ObjectHideFlags: 0
