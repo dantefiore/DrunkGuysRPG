@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0768b974bdd1f5f419ff286e5c4ca48b, type: 3}
+  m_Name: Don
+  m_EditorClassIdentifier: 
+  charName: Don
+  speed: 10
+  strength: 8
+  defense: 4
+  characterGameObject: {fileID: 123040516411543458, guid: 8c8ff346ebc71114a9817694def13a2d, type: 3}
+  maxHealth: 16
+  currHealth: 16
+  maxAbilityPts: 20
+  currAbilityPts: 20
+  level: 1
+  exp: 0
+  position:
+  - 0
+  - 0
+  - 0
+  isPlayer: 1
+  isTurnSkipped: 0
+  charMoves:
+  - {fileID: 11400000, guid: 88ab3198754aaf54ab703e590adc9ed2, type: 2}
+  lvlOneAbilityPts: 20
+  lvlOneHealth: 16
+  lvlOneSpeed: 10
+  lvlOneStrength: 8
+  lvlOneDefense: 4

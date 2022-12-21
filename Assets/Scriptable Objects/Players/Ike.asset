@@ -10,30 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0768b974bdd1f5f419ff286e5c4ca48b, type: 3}
-  m_Name: Jay
+  m_Name: Ike
   m_EditorClassIdentifier: 
-  charName: Jay
-  speed: 7
-  strength: 4
-  defense: 2
-  characterGameObject: {fileID: 123040516411543458, guid: b47db4728f70c1f4ab0356e8e24c16a7, type: 3}
-  maxHealth: 12
-  currHealth: 12
-  maxAbilityPts: 10
-  currAbilityPts: 10
+  charName: Ike
+  speed: 8
+  strength: 8
+  defense: 5
+  characterGameObject: {fileID: 123040516411543458, guid: 4cc87ff34d4cc3e4e9739849a5059b66, type: 3}
+  maxHealth: 16
+  currHealth: 16
+  maxAbilityPts: 20
+  currAbilityPts: 20
   level: 1
   exp: 0
   position:
-  - 0
-  - 0
-  - 0
+  - 2
+  - 0.09799999
+  - 2
   isPlayer: 1
   isTurnSkipped: 0
   charMoves:
   - {fileID: 11400000, guid: 88ab3198754aaf54ab703e590adc9ed2, type: 2}
-  - {fileID: 11400000, guid: 25d0b14bb462cdb41a5132656d39079a, type: 2}
-  lvlOneAbilityPts: 10
-  lvlOneHealth: 12
-  lvlOneSpeed: 7
-  lvlOneStrength: 4
-  lvlOneDefense: 2
+  - {fileID: 11400000, guid: 5c15ffcff2f5b7a4fa472c4f785bd546, type: 2}
+  - {fileID: 11400000, guid: b035cf462204f2b40a06886efd1f5724, type: 2}
+  lvlOneAbilityPts: 20
+  lvlOneHealth: 16
+  lvlOneSpeed: 8
+  lvlOneStrength: 8
+  lvlOneDefense: 5

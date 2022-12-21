@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0768b974bdd1f5f419ff286e5c4ca48b, type: 3}
-  m_Name: TempEnemy 4
+  m_Name: Steve
   m_EditorClassIdentifier: 
-  charName: bob
-  speed: 3
-  strength: 1
-  defense: 2
-  characterGameObject: {fileID: 721797219970680067, guid: 8cb59d2aa988f1c429b09f3f98a3c9c2, type: 3}
-  maxHealth: 4
-  currHealth: 4
+  charName: Steve
+  speed: 10
+  strength: 12
+  defense: 5
+  characterGameObject: {fileID: 123040516411543458, guid: 0bf95bf6382933b47a7c20020bef77b3, type: 3}
+  maxHealth: 20
+  currHealth: 20
   maxAbilityPts: 10
   currAbilityPts: 10
   level: 1
-  exp: 3
+  exp: 0
   position:
   - 0
   - 0
   - 0
-  isPlayer: 0
+  isPlayer: 1
   isTurnSkipped: 0
-  charMoves: []
+  charMoves:
+  - {fileID: 11400000, guid: 88ab3198754aaf54ab703e590adc9ed2, type: 2}
   lvlOneAbilityPts: 10
-  lvlOneHealth: 10
-  lvlOneSpeed: 1
-  lvlOneStrength: 0
-  lvlOneDefense: 0
+  lvlOneHealth: 20
+  lvlOneSpeed: 10
+  lvlOneStrength: 12
+  lvlOneDefense: 5

@@ -10,28 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0768b974bdd1f5f419ff286e5c4ca48b, type: 3}
-  m_Name: TempEnemy 3
+  m_Name: Eren
   m_EditorClassIdentifier: 
-  charName: Theif
+  charName: Eren
   speed: 12
-  strength: 1
-  defense: 2
-  characterGameObject: {fileID: 721797219970680067, guid: 8cb59d2aa988f1c429b09f3f98a3c9c2, type: 3}
-  maxHealth: 4
-  currHealth: 4
-  maxAbilityPts: 10
-  currAbilityPts: 10
+  strength: 8
+  defense: 5
+  characterGameObject: {fileID: 123040516411543458, guid: d5d4623955d565d43a8747519e33779e, type: 3}
+  maxHealth: 16
+  currHealth: 16
+  maxAbilityPts: 18
+  currAbilityPts: 18
   level: 1
-  exp: 3
+  exp: 0
   position:
   - 0
   - 0
   - 0
-  isPlayer: 0
+  isPlayer: 1
   isTurnSkipped: 0
-  charMoves: []
-  lvlOneAbilityPts: 10
-  lvlOneHealth: 10
-  lvlOneSpeed: 1
-  lvlOneStrength: 0
-  lvlOneDefense: 0
+  charMoves:
+  - {fileID: 11400000, guid: 88ab3198754aaf54ab703e590adc9ed2, type: 2}
+  lvlOneAbilityPts: 18
+  lvlOneHealth: 16
+  lvlOneSpeed: 12
+  lvlOneStrength: 8
+  lvlOneDefense: 5

@@ -15,6 +15,7 @@ MonoBehaviour:
   charName: Enemy
   speed: 8
   strength: 1
+  defense: 2
   characterGameObject: {fileID: 721797219970680067, guid: 8cb59d2aa988f1c429b09f3f98a3c9c2, type: 3}
   maxHealth: 5
   currHealth: -1
@@ -28,7 +29,9 @@ MonoBehaviour:
   - 0
   isPlayer: 0
   isTurnSkipped: 0
+  charMoves: []
   lvlOneAbilityPts: 10
   lvlOneHealth: 10
   lvlOneSpeed: 1
   lvlOneStrength: 0
+  lvlOneDefense: 0

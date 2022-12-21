@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 /*  This will hold every move the enemy could take, and takes in everything it needs to do its moves.
 *   Later down the line for bosses and other enemies will have moves to heal the whole party or attack 
@@ -35,7 +36,12 @@ public class EnemyAttacks : MonoBehaviour
 
         gameText.text = enemies[charID].charName + " attacked " + players[playerPicked].charName + "!";
 
-        playerHUD[playerPicked].SetHP(players[playerPicked], enemies[charID].strength, false);
+        int dmg_amount = enemies[charID].strength - players[playerPicked].defense;
+
+        if(dmg_amount < 1)
+            dmg_amount = 1;
+
+        playerHUD[playerPicked].SetHP(players[playerPicked], dmg_amount, false);
     }
 
     /*  Takes in everything it needs to heal this unit.  */
