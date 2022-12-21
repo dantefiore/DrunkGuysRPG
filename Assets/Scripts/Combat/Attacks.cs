@@ -31,7 +31,6 @@ public class Attacks : MonoBehaviour
     public List<StatusHUD> enemyHUDs = new List<StatusHUD>();
     public List<StatusHUD> playerHUDs = new List<StatusHUD>();
 
-    [Space]
     private bool btnPressed = false;    //if the button was pressed
     //private Moves tempMove;
 
@@ -130,7 +129,12 @@ public class Attacks : MonoBehaviour
         // damages every character in the enemy party
         for (int i = 0; i < enemyParty.partyMembers.Count; i++)
         {
-            enemyHUDs[i].SetHP(enemyParty.partyMembers[i], character.strength, false);
+            int dmg_amount = character.strength - enemyParty.partyMembers[i].defense;
+
+            if(dmg_amount < 1)
+                dmg_amount = 1;
+
+            enemyHUDs[i].SetHP(enemyParty.partyMembers[i], dmg_amount, false);
         }
 
         // decreses this characters AP
@@ -185,7 +189,12 @@ public class Attacks : MonoBehaviour
             btnList[i].gameObject.SetActive(false);
 
         // damages the selected enemy
-        enemyHUDs[btnID - 1].SetHP(enemyParty.partyMembers[btnID - 1], character.strength, false);
+        int dmg_amount = character.strength - enemyParty.partyMembers[btnID - 1].defense;
+
+        if (dmg_amount < 1)
+            dmg_amount = 1;
+
+        enemyHUDs[btnID - 1].SetHP(enemyParty.partyMembers[btnID - 1], dmg_amount, false);
 
         //attackBtn.gameObject.SetActive(false);
 

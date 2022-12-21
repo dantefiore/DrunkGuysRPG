@@ -109,6 +109,7 @@ public class StatusHUD : MonoBehaviour
                 float _fAmount = amount * percentage;
                 float _dAmount = _fAmount / status.maxHealth;
                 status.currHealth -= _fAmount;
+
                 hpBar.fillAmount -= _dAmount;
                 if (status.currHealth >= 0)
                     hpValue.SetText(status.currHealth + "/" + status.maxHealth);

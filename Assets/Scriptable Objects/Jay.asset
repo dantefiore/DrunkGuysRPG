@@ -15,6 +15,7 @@ MonoBehaviour:
   charName: Jay
   speed: 7
   strength: 4
+  defense: 2
   characterGameObject: {fileID: 123040516411543458, guid: b47db4728f70c1f4ab0356e8e24c16a7, type: 3}
   maxHealth: 12
   currHealth: 12
@@ -35,3 +36,4 @@ MonoBehaviour:
   lvlOneHealth: 12
   lvlOneSpeed: 7
   lvlOneStrength: 4
+  lvlOneDefense: 2

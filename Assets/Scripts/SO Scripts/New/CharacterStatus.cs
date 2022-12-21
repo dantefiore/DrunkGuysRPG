@@ -15,11 +15,13 @@ public class CharacterStatus : ScriptableObject
     public string charName = "name";
     public int speed = 1;
     public int strength;
+    public int defense;
     public GameObject characterGameObject;
     
     [Header("Health")]
     public float maxHealth = 10;
     public float currHealth = 10;
+
 
     [Header("Ability Pts")]
     public float maxAbilityPts = 10;
@@ -46,4 +48,5 @@ public class CharacterStatus : ScriptableObject
     public float lvlOneHealth = 10;
     public int lvlOneSpeed = 1;
     public int lvlOneStrength;
+    public int lvlOneDefense;
 }

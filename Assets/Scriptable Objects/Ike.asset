@@ -15,17 +15,18 @@ MonoBehaviour:
   charName: Ike
   speed: 10
   strength: 2
+  defense: 1
   characterGameObject: {fileID: 123040516411543458, guid: 4cc87ff34d4cc3e4e9739849a5059b66, type: 3}
   maxHealth: 10
   currHealth: 10
   maxAbilityPts: 10
-  currAbilityPts: 10
+  currAbilityPts: 0
   level: 1
   exp: 0
   position:
-  - 0
-  - 0
-  - 0
+  - -2
+  - 0.09799999
+  - 2
   isPlayer: 1
   isTurnSkipped: 0
   charMoves:
@@ -36,3 +37,4 @@ MonoBehaviour:
   lvlOneHealth: 10
   lvlOneSpeed: 10
   lvlOneStrength: 2
+  lvlOneDefense: 1
