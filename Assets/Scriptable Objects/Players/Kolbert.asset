@@ -19,10 +19,10 @@ MonoBehaviour:
   characterGameObject: {fileID: 123040516411543458, guid: 1352b10f876122f42be40348edcbd94b, type: 3}
   maxHealth: 20
   currHealth: 20
-  maxAbilityPts: 8
-  currAbilityPts: 8
-  level: 18
-  exp: 18
+  maxAbilityPts: 18
+  currAbilityPts: 18
+  level: 1
+  exp: 0
   position:
   - 0
   - 0

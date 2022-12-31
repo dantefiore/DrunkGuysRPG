@@ -13,21 +13,5 @@ MonoBehaviour:
   m_Name: MapSaver
   m_EditorClassIdentifier: 
   fromBattle: 0
-  keys:
-  - {fileID: 5198204446967480250, guid: 07de95e4f4d966a4ba548bb94fcbfe5c, type: 3}
-  - {fileID: 5198204446967480250, guid: ebabdb5b81d6d5c499aba9b5faeec2a1, type: 3}
-  - {fileID: 5198204446967480250, guid: fd4661dbef8f0674c8e06c974b5dcdb6, type: 3}
-  - {fileID: 5198204446967480250, guid: 07de95e4f4d966a4ba548bb94fcbfe5c, type: 3}
-  - {fileID: 5198204446967480250, guid: 254afaafb6dc74b43a8bac0e500015e2, type: 3}
-  - {fileID: 5198204446967480250, guid: fd4661dbef8f0674c8e06c974b5dcdb6, type: 3}
-  - {fileID: 721797219970680067, guid: 8cb59d2aa988f1c429b09f3f98a3c9c2, type: 3}
-  - {fileID: 3127689958543356350, guid: 8d4eaca9aaf208e4f8a6c49ac3bf3346, type: 3}
-  values:
-  - {x: 0, y: -0.45, z: 10}
-  - {x: 10, y: -0.45, z: 0}
-  - {x: 0, y: -0.45, z: -10}
-  - {x: -10, y: -0.45, z: 0}
-  - {x: 10, y: -0.45, z: 10}
-  - {x: -10, y: -0.45, z: -10}
-  - {x: 2, y: 0.09799999, z: 2}
-  - {x: -10, y: -0.45, z: -10}
+  keys: []
+  values: []

@@ -35,5 +35,13 @@ public class PartyManager : MonoBehaviour
             else
                 partyMembersLoc[j].sprite = null;
         }
+
+        partyMembersLoc[0].gameObject.GetComponent<StatusHolder>().charStatus = party.partyMembers[0];
+        partyMembersLoc[0].gameObject.GetComponent<CharacterMovement>().SetCharacter();
+        partyMembersLoc[0].gameObject.GetComponent<StatusHolder>().SetStatus();
+        
+        partyMembersLoc[1].gameObject.GetComponent<FollowerMovement>().SetCharacter();
+        partyMembersLoc[2].gameObject.GetComponent<FollowerMovement>().SetCharacter();
+        partyMembersLoc[3].gameObject.GetComponent<FollowerMovement>().SetCharacter();
     }
 }

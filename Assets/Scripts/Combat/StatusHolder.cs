@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class StatusHolder : MonoBehaviour
@@ -8,7 +9,7 @@ public class StatusHolder : MonoBehaviour
     int index;   // index of the defeated enemy in the saver lists
     [SerializeField] MapSaverSO saver;
 
-    private void Start()
+    public void SetStatus()
     {
         if (charStatus.isPlayer && saver.fromBattle)
         {

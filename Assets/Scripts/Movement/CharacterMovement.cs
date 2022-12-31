@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
@@ -9,6 +10,8 @@ public class CharacterMovement : MonoBehaviour
     Vector3 playerVelocity;
     Rigidbody rb;
     SpriteRenderer sprite;
+    Animator anim;
+    [SerializeField] List<AnimatorOverrideController> animators = new List<AnimatorOverrideController>();
     float gravityValue = -9.81f;
 
     //[SerializeField] MapSaverSO saver;
@@ -17,6 +20,7 @@ public class CharacterMovement : MonoBehaviour
     {
         // Conects the character controller
         controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
 
         rb = this.gameObject.GetComponent<Rigidbody>();
         sprite = this.gameObject.GetComponent<SpriteRenderer>();
@@ -25,7 +29,10 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
+
+        moveDirection = new Vector3(moveX, 0, moveZ);
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= speed;
 
@@ -40,11 +47,16 @@ public class CharacterMovement : MonoBehaviour
 
         controller.Move(moveDirection * Time.deltaTime);
 
-        if (Input.GetAxis("Horizontal") > 0)
+        if (moveX != 0 || moveZ != 0)
+            anim.SetBool("isMoving", true);
+        else
+            anim.SetBool("isMoving", false);
+
+        if (moveX > 0)
         {
             sprite.flipX = false;
         }
-        else if(Input.GetAxis("Horizontal") < 0)
+        else if(moveX < 0)
         {
             sprite.flipX = true;
         }
@@ -54,5 +66,17 @@ public class CharacterMovement : MonoBehaviour
     {
         Vector2 newPos = new Vector2(moveDirection.x + rb.position.x, moveDirection.z + rb.position.z);
         rb.MovePosition(newPos * speed * Time.fixedDeltaTime);
+    }
+
+    public void SetCharacter()
+    {
+        for (int i = 0; i < animators.Count; i++)
+        {
+            if (sprite.sprite.name == animators[i].name)
+            {
+                anim.runtimeAnimatorController = animators[i];
+                break;
+            }
+        }
     }
 }

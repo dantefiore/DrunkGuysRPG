@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Party
   m_EditorClassIdentifier: 
   partyMembers:
-  - {fileID: 11400000, guid: bc45d9e4a90864e44a81eec46df57720, type: 2}
-  - {fileID: 11400000, guid: 2178e733cf227ae4983a7671f13ca742, type: 2}
+  - {fileID: 11400000, guid: 1e6feef908e8a2042a36a236c12e9a58, type: 2}
+  - {fileID: 11400000, guid: d8b9e29c85a5bb649ba3a2056838b98f, type: 2}
+  - {fileID: 11400000, guid: 10c5aaad582ed1947b7314195f588322, type: 2}
+  - {fileID: 11400000, guid: 195c5a038c9fbd342b6dd97c78a541e9, type: 2}
